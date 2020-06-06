@@ -49,4 +49,19 @@ optional arguments:
   -v, --version         show program's version
                         number and exit
 
+## Sample usage 
+If you want to convert a Pdf file named "foo.pdf" into a docx file whose size is letter and orientation is landscape, just type in the terminal the following command: 
+```python pdf2docx.py foo.pdf -s letter -r landscape```
+
+Since the size and orientation are optional, you can just type
+```python pdf2docx.py```
+The script will determine the correct size and orientation based on the input file. 
+
+
+
+
+
+
+
+
 
