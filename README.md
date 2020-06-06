@@ -23,23 +23,29 @@ usage: pdf2docx.py [-h] [-s PAPERSIZE]
                    inputPdf
 
 positional arguments:
-  inputPdf              Filename of the input
+ 
+ inputPdf              Filename of the input
                         PDF.
 
 optional arguments:
-  -h, --help            show this help message
+ 
+ -h, --help            show this help message
                         and exit
-  -s PAPERSIZE, --papersize PAPERSIZE
+ 
+ -s PAPERSIZE, --papersize PAPERSIZE
                         Papersize. Valid values
                         are a4, letter, and
                         legal.
+
   -r ORIENTATION, --orientation ORIENTATION
                         Page orientation. Valid
                         values are portrait and
                         landscape.
+
   -o OUTPUT, --output OUTPUT
                         Output filename. Must be
                         docx.
+
   -v, --version         show program's version
                         number and exit
 
