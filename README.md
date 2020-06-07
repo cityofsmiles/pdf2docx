@@ -17,7 +17,8 @@ Just clone this repo in any directory you choose, then just run the ```pdf2docx.
 ## Usage
 The script ```pdf2docx.py``` takes one required parameter which is the filename of the input Pdf file. The optional arguments are pagesize, orientation, and output filename. 
 
-```usage: pdf2docx.py [-h] [-s PAPERSIZE]
+```
+usage: pdf2docx.py [-h] [-s PAPERSIZE]
                    [-r ORIENTATION] [-o OUTPUT]
                    [-v]
                    inputPdf
