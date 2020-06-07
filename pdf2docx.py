@@ -121,7 +121,7 @@ def png_to_docx(outputfile):
     document = Document(template_path)
     for pngfile in glob.glob(png_path):
         if orientation == 'portrait': 
-        	document.add_picture(pngfile, width=Inches(width_dict[papersize]), height=Inches(height_dict[papersize]))
+            document.add_picture(pngfile, width=Inches(width_dict[papersize]), height=Inches(height_dict[papersize]))
         else:
             document.add_picture(pngfile, width=Inches(height_dict[papersize]), height=Inches(width_dict[papersize]))        
     print("Saving", outputfile)
@@ -139,7 +139,7 @@ def cleanup():
 if __name__ == '__main__':
     args = parseArguments()
     try_file(args.inputPdf)
-    get_pdf_size(args.inputPdf, args.papersize, )
+    get_pdf_size(args.inputPdf, args.papersize)
     get_pdf_orientation(args.inputPdf, args.orientation)
     pdf_to_png(args.inputPdf) 
     png_to_docx(args.output)
