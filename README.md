@@ -17,7 +17,7 @@ Just clone this repo in any directory you choose, then just run the ```pdf2docx.
 ## Usage
 The script ```pdf2docx.py``` takes one required parameter which is the filename of the input Pdf file. The optional arguments are pagesize, orientation, and output filename. 
 
-usage: pdf2docx.py [-h] [-s PAPERSIZE]
+```usage: pdf2docx.py [-h] [-s PAPERSIZE]
                    [-r ORIENTATION] [-o OUTPUT]
                    [-v]
                    inputPdf
@@ -48,10 +48,11 @@ optional arguments:
 
   -v, --version         show program's version
                         number and exit
+```
 
 ## Sample usage 
-If you want to convert a Pdf file named "foo.pdf" into a docx file whose size is letter and orientation is landscape, just type in the terminal the following command: 
-```python pdf2docx.py foo.pdf -s letter -r landscape```
+If you want to convert a Pdf file named "foo.pdf" into a docx file with the filename "bar.docx" whose size is letter and orientation is landscape, just type in the terminal the following command: 
+```python pdf2docx.py foo.pdf -s letter -r landscape -o bar.docx```
 
 Since the size and orientation are optional, you can just type
 ```python pdf2docx.py```
